@@ -607,22 +607,69 @@ Set<String> set1 = new HashSet<>(Arrays.asList(array));
 Или можно:
 Set<String> set2 = new HashSet<>();
 Collections.addAll(set2, array);
+
+@FunctionalInterface
+Функциональные интерфейсы - интерфейс, который имеет только один абстрактный метод:
+java.util.function - все стандартные интерфейсы
+Виды:
+1) Consumer - принимают, но ничего не возвращают взамен
+2) Supplier - ничего не принимают в качестве параметра, просто возвращают какое-то значение
+3) Predicate - принимают значение какого-то типа, а наружу выдает булевское значение
+4) Function - принимают аргументы и возвращают значения какого-то типа
+Если параметра 2, то интерфейс BiFunctional
+5) UnaryOperator(один параметр), BinaryOperator(два параметра) - операторы, частные случаи функций
+
+Stream - это последовательность элементов, потенциально бесконечная, с возможность выполнять преобразования над ней
+java.util.stream
+Нельзя обращаться по ключу. Применяя трансформации к стриму никак не вляют на тот источник, откуда они берутся
+Stream нужно закрыть, если он что-то выделял, если связан с содержимым файла или директорией на диске
+
+Реализация:
+Set<String> vocabulary = ...
+Stream<String> stream1 = vocabulary.stream();
+
+Данный Stream нужно будет закрывать
+BufferedReader <String> reader = ...
+Stream<String> stream2 = reader.lines();
+
+double[] array = ...
+DoubleStream streamFromArray = Arrays.stream(array);
+
+IntStream stream1 = ...
+stream1.forEach(System.out::println);
+
+IntStream stream2 = ...
+OptionalInt result = stream2.findFirst(); - возвращает первый элемент
+
+Stream<String> stream3 = ...
+boolean allStringsAreLeast10Chars = stream3.allMatch(s -> s.length() > 10); - проверка, что выполняет для всех элементов
+Есть anyMatch - хоть один удовлетворяет и noneMatch - никто не удовлетворяет
+
+Stream<String> stream1 = ...
+Optional<String> minString = stream1.min(Comparator.comparing(String.length(), Integer::compare)); - также есть max
+
+Есть count - возвращает количество элементов и есть sum - возвращает сумму
+List<String> list = stream1.collect(Collectors.toList());
+
+Также есть свертка(.reduce) для применения бинарных операция, пока не останется один элемент
 */
 
-//import java.math.BigInteger;
+/*
+import java.math.BigInteger;
 
-//import java.io.InputStream;
+import java.io.InputStream;
 
-//import java.io.IOException;
+import java.io.IOException;
 
-//import java.util.Locale;
-//import java.util.Scanner;
+import java.util.Locale;
+import java.util.Scanner;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Locale;
-import java.util.Scanner;
+
+import java.util.stream.IntStream;
+*/
 
 public class Quiz {
 
@@ -988,6 +1035,21 @@ public class Quiz {
                         System.out.print(element + " ");
                     }
                 }
+            }
+        }*/
+
+        //Использование Stream
+        /*public static IntStream pseudoRandomStream(int seed) {
+            return IntStream.iterate(seed, n -> ((n * n) / 10 % 1000));
+        }*/
+
+        //Работа с min и max
+        /*public static <T> void findMinMax(Stream<? extends T> stream, Comparator<? super T> order, BiConsumer<? super T, ? super T> minMaxConsumer) {
+            List<T> list = stream.sorted(order).collect(Collectors.toList());
+            if (!list.isEmpty()) {
+                minMaxConsumer.accept(list.get(0), list.get(list.size() - 1));
+            } else {
+                minMaxConsumer.accept(null, null);
             }
         }*/
     }
