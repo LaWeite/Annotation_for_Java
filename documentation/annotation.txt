@@ -50,7 +50,7 @@ numbers.length - длина массива
 
 int[][] natrix = new int [2][2]
 
-static int mV(int[] array) {...} - mV(1,2,3)
+static int mV(int[] array) {...} - mV(new int[] {1,2,3})
 static int mV(int... array) {...} - mV(1,2,3)
 
 Сравнение двух массивов
