@@ -19,3 +19,17 @@ BigInteger, BigDecimal
 6) isNaN(double)
 
 Для перевода int к String мы можем использовать Integer.toString();
+
+1 вариант передать массив:
+static boolean mV(int[] array) {
+        return true;
+} => if (mV(new int[] {1, 2, 3})) {
+            System.out.println("nice");
+        }
+
+2 вариант передать массив:
+static boolean mV(int... array) {
+        return true;
+} => if (mV(1, 2, 3)) {
+            System.out.println("nice");
+        }
