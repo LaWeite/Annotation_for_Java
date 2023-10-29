@@ -1,3 +1,21 @@
 # Тут будут отписаны методы работы с разными типами данных(примитивными и ссылочными)
 
+types - примитивные:
+1) boolean
+2) char
+3) byte, short, int, long
+4) float, double
+
+Длинная арефметика:
+import java.math.*
+BigInteger, BigDecimal
+
+Удобства:
+1) MAX_VALUE
+2) bitcount
+3) isLetter
+4) POSITIVE_INFINITY
+5) NaN
+6) isNaN(double)
+
 Для перевода int к String мы можем использовать Integer.toString();
