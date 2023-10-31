@@ -28,6 +28,9 @@ BigInteger, BigDecimal
 6) isNaN(double)
 
 Для перевода int к String мы можем использовать Integer.toString();
+Для перевода char к int мы можем использовать Character.getNumericValue();
+
+Если мы хотим добавить разделение между словами в String при добавление, то может использовать StringJoiner, где в скобках указать разделитель;
 
 1 вариант передать массив:
 static boolean mV(int[] array) {
