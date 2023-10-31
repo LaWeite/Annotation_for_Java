@@ -1,4 +1,5 @@
-public static int removeElement(int[] nums, int val) {
+class Solution {
+    public static int removeElement(int[] nums, int val) {
         int i = 0;
         for (int element : nums) {
             if (element != val) {
@@ -9,3 +10,4 @@ public static int removeElement(int[] nums, int val) {
 
         return i + 1;
     }
+}
