@@ -46,3 +46,5 @@ static boolean mV(int... array) {
 } => if (mV(1, 2, 3)) {
             System.out.println("nice");
         }
+
+System.arraycopy() - копирование массива
