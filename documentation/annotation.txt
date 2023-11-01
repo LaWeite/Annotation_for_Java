@@ -584,6 +584,11 @@ Map<String, String> map1 = new LinkedHashhMap<>();
 Map<String, String> map2 = new TreeMap<>();
 Отличия и свойства аналогичны set
 
+У hashMap:
+1) getOrDefault(value, default) - возвращает значение 0, если нет значения
+2) get(value) - получить, что находится от этого ключа
+3) keySet() - получить Set ключей
+
 Для работы с коллекциями иногда помогает java.util.Collections:
 Где есть методы:
 1) shuffle(list) - для перетасовывания списка
