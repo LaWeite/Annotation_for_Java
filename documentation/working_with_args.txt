@@ -36,6 +36,7 @@ BigInteger, BigDecimal
 substring(...,...) - подстрока с чего-то по что-то
 string.indexOf(str) - возвращает индекс первого вхождения символа или строки
 string.charAt(index) - символ в строке по индексу
+string.contains(symbol) - есть ли данный символ в строке
 string.length() - длина строки
 string.equals(string) - сравнение двух строк
 string.isEmpty() - проверка на пустоту
