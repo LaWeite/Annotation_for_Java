@@ -20,9 +20,9 @@ import java.math.*
 BigInteger, BigDecimal
 
 Удобства:
-1) MAX_VALUE - Integer.NAX_VALUE
-2) bitcount
-3) isLetter
+1) MAX_VALUE - Integer.NAX_VALUE - максимальное значение
+2) bitcount - возвращает количество бит равных 1
+3) isLetter - проверка на букву
 4) POSITIVE_INFINITY
 5) NaN
 6) isNaN(double)
