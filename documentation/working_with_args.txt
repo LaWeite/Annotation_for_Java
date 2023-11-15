@@ -28,6 +28,7 @@ BigInteger, BigDecimal
 6) isNaN(double)
 
 Для перевода int к String мы можем использовать Integer.toString();
+Для перевода из String в int мы можем использовать Integer.valueOf(string)/Integer.parseInt(str);
 Для перевода char к int мы можем использовать Character.getNumericValue();
 
 Если хоти перевести строку в массив char, то используем s.toCharArray(), где s - String;
@@ -39,6 +40,15 @@ string.length() - длина строки
 string.equals(string) - сравнение двух строк
 string.isEmpty() - проверка на пустоту
 string.toUpperCase() / toLowerCase() - перевод строки в верхний и нижний регистры
+
+Подстроки:
+String str = "Добро пожаловать в мир Java!";
+System.out.println(str.substring(6));         //пожаловать в мир Java!
+System.out.println(str.substring(6, 15));     //пожаловат
+
+Замена символов в строке:
+String str = "Добро пожаловать в мир Java!";
+System.out.println(str.replace('о', 'А')); //ДАбрА пАжалАвать в мир Java!
 
 Если мы хотим добавить разделение между словами в String при добавление, то может использовать StringJoiner, где в скобках указать разделитель;
 Чтобы обратиться к элементу в строке по индексу, нам следует использовать: charAt();
