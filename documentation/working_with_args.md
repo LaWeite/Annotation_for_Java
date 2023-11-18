@@ -210,3 +210,11 @@ class Solution {
 }
 ```
 Необходимо использовать deepToString()
+
+## Заполнение массива:
+```java
+int[] nums = new int[4];
+Arrays.fill(nums, 36);
+System.out.println(Arrays.toString(nums));
+```
+Вывод [36,36,36,36]
