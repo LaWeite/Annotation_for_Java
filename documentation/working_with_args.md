@@ -50,11 +50,11 @@ string.toUpperCase() / toLowerCase() - перевод строки в верхн
 
 ## Подстроки:
 String str = "Добро пожаловать в мир Java!";
-System.out.println(str.substring(6)); - пожаловать в мир Java! \\
+System.out.println(str.substring(6)); - пожаловать в мир Java! \
 System.out.println(str.substring(6, 15)); - пожаловат
 
 ## Замена символов в строке:
-String str = "Добро пожаловать в мир Java!";
+String str = "Добро пожаловать в мир Java!"; \
 System.out.println(str.replace('о', 'А')); //ДАбрА пАжалАвать в мир Java!
 
 Если нужно просто вывести число с определённым количеством знаков после запятой, можно использовать для этого форматирование строк:
