@@ -164,3 +164,17 @@ int[] b = {1, 2, 3};
 > 1) a == b - сравнит ссылки
 > 2) a.equals(b) - сравнит ссылки
 3) Arrays.equals(a, b) - сравнит значения
+
+## Вывод массива:
+```java
+int[] a = {1, 2, 3};
+System.out.print(Arrays.toString(a));
+```
+Вывод будет: [1, 2, 3]
+Если же мы хотим вывести без скобок и через пробелы, то:
+1) Воспольщоваться for
+2) ```java
+   int[] nums = {2, 4, 6, 8, 10};
+   String str = Arrays.toString(nums);
+   System.out.println(str.replaceAll("\\[|\\]|\\,", ""));
+   ```
