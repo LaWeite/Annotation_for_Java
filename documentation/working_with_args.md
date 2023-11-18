@@ -78,6 +78,36 @@ public class Main {
 > [!IMPORTANT]
 > Оператор "new" принудительно выделяет новую область в памяти
 
+Для сравнения самих строк, а не ссылок следует использовать такой способ:
+```java
+public class Main {
+   public static void main(String[] args) {
+       String s1 = "JavaRush - лучший сайт для изучения Java!";
+       String s2 = new String("JavaRush - лучший сайт для изучения Java!");
+       System.out.println(s1.equals(s2));
+   }
+}
+```
+
+Если же необходимо сравнить без учета регистра, то:
+```java
+public class Main {
+   public static void main(String[] args) {
+       String address1 = "г. Москва, ул. Академика Королева, дом 12";
+       String address2 = new String("Г. МОСКВА, УЛ. АКАДЕМИКА КОРОЛЕВА, ДОМ 12");
+       System.out.println(address1.equalsIgnoreCase(address2));
+   }
+}
+```
+
+> [!TIP]
+> У класса String есть еще один хитрый метод — intern();
+> Метод intern() напрямую работает со String Pool’ом. Если ты вызываешь метод intern() у какой-то строки, он:
+> Смотрит, есть ли строка с таким текстом в пуле строк
+> Если есть — возвращает ссылку на нее в пуле
+> Если же нет — помещает строку с этим текстом в пул строк и возвращает ссылку на нее.
+> Применив метод intern() к ссылке на строку, которая создавалась через new, мы можем сравнивать ее со ссылкой на строку из String Pool’a через оператор ==. 
+
 ## Подстроки:
 ```java
 String str = "Добро пожаловать в мир Java!";
