@@ -30,7 +30,7 @@ BigInteger, BigDecimal
 ## Casts:
 Для перевода int к String мы можем использовать Integer.toString();
 Для перевода из String в int мы можем использовать Integer.valueOf(string)/Integer.parseInt(str);
-`#0969DA` Для перевода char к int мы можем использовать Character.getNumericValue();
+Для перевода char к int мы можем использовать Character.getNumericValue();
 
 Если хоти перевести строку в массив char, то используем s.toCharArray(), где s - String;
 
