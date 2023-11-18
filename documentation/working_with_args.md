@@ -178,7 +178,7 @@ class Solution {
     }
 }
 ```
-
+Необходимо использовать Arrays.deepEquals(..., ...)
 ## Вывод массива:
 ```java
 int[] a = {1, 2, 3};
