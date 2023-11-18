@@ -19,7 +19,7 @@ Package в Java используется для организации и стр
 import java.math.*
 BigInteger, BigDecimal
 
-###Удобства:
+### Удобства:
 1) MAX_VALUE - Integer.NAX_VALUE - максимальное значение
 2) bitcount - возвращает количество бит равных 1
 3) isLetter - проверка на букву
