@@ -165,6 +165,20 @@ int[] b = {1, 2, 3};
 > 2) a.equals(b) - сравнит ссылки
 3) Arrays.equals(a, b) - сравнит значения
 
+> [!WARNING]
+> Не сработает для многомерных массивов
+
+```java
+class Solution {
+    public static void main(String[] args) {
+        int[][] arr1 = {{1, 2}, {2}, {3, 5}};
+        int[][] arr2 = {{1, 2}, {2}, {3, 5}};
+
+        System.out.println(Arrays.deepEquals(arr1, arr2));
+    }
+}
+```
+
 ## Вывод массива:
 ```java
 int[] a = {1, 2, 3};
@@ -178,3 +192,17 @@ System.out.print(Arrays.toString(a));
    String str = Arrays.toString(nums);
    System.out.println(str.replaceAll("\\[|\\]|\\,", ""));
    ```
+> [!WARNING]
+> Не сработает для многомерных массивов
+
+```java
+class Solution {
+    public static void main(String[] args) {
+        int[][] arr1 = {{1, 2}, {2}, {3, 5}};
+        int[][] arr2 = Arrays.copyOf(arr1, arr1.length);
+        
+        System.out.println(Arrays.deepToString(arr2));
+    }
+}
+```
+Необходимо использовать deepToString()
