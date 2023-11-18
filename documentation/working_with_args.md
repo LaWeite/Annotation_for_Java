@@ -11,9 +11,9 @@ Package в Java используется для организации и стр
 
 ## Types - примитивные:
 > 1) boolean
-2) char
-3) byte, short, int, long
-4) float, double
+> 2) char
+> 3) byte, short, int, long
+> 4) float, double
 
 Длинная арефметика:
 import java.math.*
