@@ -50,7 +50,7 @@ string.isEmpty() - проверка на пустоту
 string.toUpperCase() / toLowerCase() - перевод строки в верхний и нижний регистры
 
 ## Подстроки:
-```c++
+```java
 String str = "Добро пожаловать в мир Java!";
 System.out.println(str.substring(6)); - пожаловать в мир Java!
 System.out.println(str.substring(6, 15)); - пожаловат
@@ -88,6 +88,7 @@ static boolean mV(int... array) {
 ```java
 int[] a = new int[];
 int[] a = {...};
+int[] a = new int[] {...};
 ```
 
 ## Копирование:
