@@ -172,7 +172,7 @@ System.out.print(Arrays.toString(a));
 ```
 Вывод будет: [1, 2, 3]
 Если же мы хотим вывести без скобок и через пробелы, то:
-1) Воспольщоваться for
+1) Воспользоваться for
 2) ```java
    int[] nums = {2, 4, 6, 8, 10};
    String str = Arrays.toString(nums);
