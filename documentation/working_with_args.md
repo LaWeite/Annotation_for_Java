@@ -84,7 +84,7 @@ static boolean mV(int... array) {
             System.out.println("nice");
         }
 ```
-## `rgb(9, 105, 218)` Создание массивов:
+## rgb(9, 105, 218 Создание массивов:
 ```java
 int[] a = new int[];
 int[] a = {...};
