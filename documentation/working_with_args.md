@@ -49,7 +49,7 @@ string.isEmpty() - проверка на пустоту
 string.toUpperCase() / toLowerCase() - перевод строки в верхний и нижний регистры
 
 ## Подстроки:
-String str = "Добро пожаловать в мир Java!";
+String str = "Добро пожаловать в мир Java!"; \
 System.out.println(str.substring(6)); - пожаловать в мир Java! \
 System.out.println(str.substring(6, 15)); - пожаловат
 
