@@ -49,6 +49,32 @@ string.equals(string) - сравнение двух строк
 string.isEmpty() - проверка на пустоту
 string.toUpperCase() / toLowerCase() - перевод строки в верхний и нижний регистры
 
+## Сравнение String:
+```java
+public class Main {
+   public static void main(String[] args) {
+       String s1 = "JavaRush - лучший сайт для изучения Java!";
+       String s2 = new String("JavaRush - лучший сайт для изучения Java!");
+       System.out.println(s1 == s2);
+   }
+}
+```
+Будет выведено false, но если:
+```java
+public class Main {
+   public static void main(String[] args) {
+       String s1 = "JavaRush - лучший сайт для изучения Java!";
+       String s2 = "JavaRush - лучший сайт для изучения Java!";
+       System.out.println(s1 == s2);
+   }
+}
+```
+Вывод будет true. Так работает, потому что в этом случае ссылки на эти две строчкм равны.
+> [!IMPORTANT]
+> "==" - всегда сравнивает ссылки!
+Для строк существует String pool, тк строк обычно в программах много, то чтобы экономить память, проверяется есть ли такая строка в pool, если есть, то новая создаваться не будет.
+> оператор "new" принудительно выделяет новую область в памяти
+
 ## Подстроки:
 ```java
 String str = "Добро пожаловать в мир Java!";
