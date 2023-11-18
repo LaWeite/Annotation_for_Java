@@ -85,7 +85,7 @@ static boolean mV(int... array) {
 
 ## Сравнение массивов:
 int[] a = {1, 2, 3} \
-int[] b = {1, 2, 3} 
+int[] b = {1, 2, 3} \
 1) a == b - сравнит ссылки
 2) a.equals(b) - сравнит ссылки
 3) Arrays.equals(a, b) - сравнит значения
