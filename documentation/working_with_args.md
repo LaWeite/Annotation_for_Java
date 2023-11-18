@@ -181,7 +181,7 @@ class Solution {
 Необходимо использовать Arrays.deepEquals(...,...)
 
 > [!IMPORTANT]
-> [Для массивов с собственными объектами будет необходимо переопределить equals](practice/equalsAndCopy.java)
+> [Для массивов с собственными объектами будет необходимо переопределить equals](Annotation_for_java/practice/equalsAndCopy.java)
 
 ## Вывод массива:
 ```java
