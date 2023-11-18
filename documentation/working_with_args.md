@@ -58,25 +58,25 @@ String str = "Добро пожаловать в мир Java!"; \
 System.out.println(str.replace('о', 'А')); //ДАбрА пАжалАвать в мир Java!
 
 Если нужно просто вывести число с определённым количеством знаков после запятой, можно использовать для этого форматирование строк:
-double x = 25.364789;
-String formatted = String.format("%.3f", x);
-System.out.println(formatted);    // 25.365
+double x = 25.364789; \
+String formatted = String.format("%.3f", x); \
+System.out.println(formatted);    // 25.365 \
 
 Если мы хотим добавить разделение между словами в String при добавление, то может использовать StringJoiner, где в скобках указать разделитель;
 
 1 вариант передать массив:
-static boolean mV(int[] array) {
-        return true;
-} => if (mV(new int[] {1, 2, 3})) {
-            System.out.println("nice");
-        }
+static boolean mV(int[] array) { \
+        return true; \
+} => if (mV(new int[] {1, 2, 3})) { \
+            System.out.println("nice"); \
+        } \
 
-2 вариант передать массив:
-static boolean mV(int... array) {
-        return true;
-} => if (mV(1, 2, 3)) {
-            System.out.println("nice");
-        }
+2 вариант передать массив: \
+static boolean mV(int... array) { \
+        return true; \
+} => if (mV(1, 2, 3)) { \
+            System.out.println("nice"); \
+        } \
 
 ## Копирование:
 1) System.arraycopy() - копирование массива, имеет native нотацию, что означает, что реализация написана на другом языке
