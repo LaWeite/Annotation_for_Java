@@ -15,6 +15,9 @@ Package в Java используется для организации и стр
 > 3) byte, short, int, long
 > 4) float, double
 
+> [!NOTE]
+> Все типы передаются по значению
+
 Длинная арефметика:
 import java.math.*
 BigInteger, BigDecimal
