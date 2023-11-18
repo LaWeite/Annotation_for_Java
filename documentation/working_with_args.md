@@ -35,9 +35,10 @@ BigInteger, BigDecimal
 Если хоти перевести строку в массив char, то используем s.toCharArray(), где s - String;
 
 В классе String имеется очень полезный метод split(). С помощью этого метода можно разделить имеющуюся строку на массив типа String[].
+```c++
 String str = "I'll be back";
 String[] words = str.split(" ");
-
+```
 ## Методы String:
 substring(...,...) - подстрока с чего-то по что-то
 string.indexOf(str) - возвращает индекс первого вхождения символа или строки
@@ -49,34 +50,45 @@ string.isEmpty() - проверка на пустоту
 string.toUpperCase() / toLowerCase() - перевод строки в верхний и нижний регистры
 
 ## Подстроки:
-String str = "Добро пожаловать в мир Java!"; \
-System.out.println(str.substring(6)); - пожаловать в мир Java! \
+```c++
+String str = "Добро пожаловать в мир Java!";
+System.out.println(str.substring(6)); - пожаловать в мир Java!
 System.out.println(str.substring(6, 15)); - пожаловат
-
+```
 ## Замена символов в строке:
-String str = "Добро пожаловать в мир Java!"; \
+```c++
+String str = "Добро пожаловать в мир Java!";
 System.out.println(str.replace('о', 'А')); //ДАбрА пАжалАвать в мир Java!
-
+```
 Если нужно просто вывести число с определённым количеством знаков после запятой, можно использовать для этого форматирование строк:
-double x = 25.364789; \
-String formatted = String.format("%.3f", x); \
+```c++
+double x = 25.364789;
+String formatted = String.format("%.3f", x);
 System.out.println(formatted);    // 25.365
-
+```
 Если мы хотим добавить разделение между словами в String при добавление, то может использовать StringJoiner, где в скобках указать разделитель;
 
 1 вариант передать массив:
+```c++
 static boolean mV(int[] array) {
         return true;
 } => if (mV(new int[] {1, 2, 3})) {
             System.out.println("nice");
-        } \
-
+        }
+```
 2 вариант передать массив:
+```c++
 static boolean mV(int... array) {
         return true;
 } => if (mV(1, 2, 3)) {
             System.out.println("nice");
         }
+```
+## Создание массивов:
+```c++
+int[] a = new int[];
+int[] a = {...};
+```
 
 ## Копирование:
 1) System.arraycopy() - копирование массива, имеет native нотацию, что означает, что реализация написана на другом языке
@@ -84,8 +96,10 @@ static boolean mV(int... array) {
 Оба этих способа не уступают друг другу по времени
 
 ## Сравнение массивов:
-int[] a = {1, 2, 3} \
-int[] b = {1, 2, 3}
+```c++
+int[] a = {1, 2, 3};
+int[] b = {1, 2, 3};
+```
 1) a == b - сравнит ссылки
 2) a.equals(b) - сравнит ссылки
 3) Arrays.equals(a, b) - сравнит значения
