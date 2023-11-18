@@ -35,7 +35,7 @@ BigInteger, BigDecimal
 Если хоти перевести строку в массив char, то используем s.toCharArray(), где s - String;
 
 В классе String имеется очень полезный метод split(). С помощью этого метода можно разделить имеющуюся строку на массив типа String[].
-```c++
+```java
 String str = "I'll be back";
 String[] words = str.split(" ");
 ```
@@ -56,12 +56,12 @@ System.out.println(str.substring(6)); - пожаловать в мир Java!
 System.out.println(str.substring(6, 15)); - пожаловат
 ```
 ## Замена символов в строке:
-```c++
+```java
 String str = "Добро пожаловать в мир Java!";
 System.out.println(str.replace('о', 'А')); //ДАбрА пАжалАвать в мир Java!
 ```
 Если нужно просто вывести число с определённым количеством знаков после запятой, можно использовать для этого форматирование строк:
-```c++
+```java
 double x = 25.364789;
 String formatted = String.format("%.3f", x);
 System.out.println(formatted);    // 25.365
@@ -69,7 +69,7 @@ System.out.println(formatted);    // 25.365
 Если мы хотим добавить разделение между словами в String при добавление, то может использовать StringJoiner, где в скобках указать разделитель;
 
 1 вариант передать массив:
-```c++
+```java
 static boolean mV(int[] array) {
         return true;
 } => if (mV(new int[] {1, 2, 3})) {
@@ -77,7 +77,7 @@ static boolean mV(int[] array) {
         }
 ```
 2 вариант передать массив:
-```c++
+```java
 static boolean mV(int... array) {
         return true;
 } => if (mV(1, 2, 3)) {
@@ -85,7 +85,7 @@ static boolean mV(int... array) {
         }
 ```
 ## Создание массивов:
-```c++
+```java
 int[] a = new int[];
 int[] a = {...};
 ```
@@ -96,7 +96,7 @@ int[] a = {...};
 Оба этих способа не уступают друг другу по времени
 
 ## Сравнение массивов:
-```c++
+```java
 int[] a = {1, 2, 3};
 int[] b = {1, 2, 3};
 ```
