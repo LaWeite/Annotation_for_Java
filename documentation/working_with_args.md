@@ -50,8 +50,8 @@ string.toUpperCase() / toLowerCase() - перевод строки в верхн
 
 ## Подстроки:
 String str = "Добро пожаловать в мир Java!";
-System.out.println(str.substring(6));         //пожаловать в мир Java!
-System.out.println(str.substring(6, 15));     //пожаловат
+System.out.println(str.substring(6)); - пожаловать в мир Java!
+System.out.println(str.substring(6, 15)); - пожаловат
 
 ## Замена символов в строке:
 String str = "Добро пожаловать в мир Java!";
