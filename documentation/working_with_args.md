@@ -37,8 +37,8 @@ BigInteger, BigDecimal
 > [!IMPORTANT]
 > valueOf вернет Integer, а parseInt вернет int
 
-Для перевода char к int мы можем использовать Character.getNumericValue();
-Если хоти перевести строку в массив char, то используем s.toCharArray(), где s - String;
+3) Для перевода char к int мы можем использовать Character.getNumericValue();
+4) Если хоти перевести строку в массив char, то используем s.toCharArray(), где s - String;
 
 # String:
 
