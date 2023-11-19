@@ -31,8 +31,8 @@ BigInteger, BigDecimal
 6) isNaN(double)
 
 # Casts:
-Для перевода int к String мы можем использовать Integer.toString();
-Для перевода из String в int мы можем использовать Integer.valueOf(string)/Integer.parseInt(str);
+1) Для перевода int к String мы можем использовать Integer.toString();
+2) Для перевода из String в int мы можем использовать Integer.valueOf(string)/Integer.parseInt(str);
 
 > [!IMPORTANT]
 > valueOf вернет Integer, а parseInt вернет int
